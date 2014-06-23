@@ -3,9 +3,6 @@ BINDIR = ../bin/
 OBJ = $(SRC:%.c=$(BINDIR)%.o)
 DEP = $(SRC:%.c=$(BINDIR)%.d)
 
-INCLUDES = -I../include 
-INCLUDES += -I $(RIOTBASE)/drivers/cc110x
-INCLUDES += -I $(RIOTBASE)/sys/include
 INCLUDES += -I$(RIOTCPU)/$(CPU)/drivers/include
 INCLUDES += -I$(RIOTCPU)/cortex-m/CMSIS/Device/ST/STM32F4xx/include
 INCLUDES += -I$(RIOTCPU)/cortex-m/CMSIS/include

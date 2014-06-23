@@ -3,7 +3,7 @@ BINDIR = $(RIOTBOARD)/$(BOARD)/bin/
 OBJ = $(SRC:%.c=$(BINDIR)%.o)## defines
 DEP = $(SRC:%.c=$(BINDIR)%.d)
 
-INCLUDES += -Iinclude/
+INCLUDES += -I$(RIOTBOARD)/$(BOARD)/include/
 INCLUDES += -I$(RIOTCPU)/cortex-m/CMSIS/Device/ST/STM32F4xx/include
 INCLUDES += -I$(RIOTCPU)/cortex-m/CMSIS/include
 INCLUDES += -I$(RIOTCPU)/stm32f407vgt6/include

@@ -42,9 +42,7 @@
 // cpu
 #include "cpu.h"
 // sys
-#include "cc1100.h"
-#include "arch_cc1100.h"
-#include "cc1100_spi.h"
+#include "cc110x_ng.h"
 //#include "gpioint.h"
 
 #define CC1100_GDO0         (GPIO_ReadInputDataBit(GPIOC, GPIO_Pin_4) )	// read serial I/O (GDO0)
