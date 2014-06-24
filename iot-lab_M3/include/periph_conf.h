@@ -30,7 +30,7 @@
 /* Timer 0 configuration */
 #define TIMER_0_DEV         TIM2
 #define TIMER_0_CHANNELS    4
-#define TIMER_0_PRESCALER   (2303U)
+#define TIMER_0_PRESCALER   (36000U)
 #define TIMER_0_MAX_VALUE   (0xffff)
 #define TIMER_0_CLKEN()     RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM2, ENABLE)
 #define TIMER_0_ISR         TIM2_IRQHandler
@@ -40,7 +40,7 @@
 /* Timer 1 configuration */
 #define TIMER_1_DEV         TIM3
 #define TIMER_1_CHANNELS    2
-#define TIMER_1_PRESCALER   (71U)
+#define TIMER_1_PRESCALER   (36000U)
 #define TIMER_1_MAX_VALUE   (0xffff)
 #define TIMER_1_CLKEN()     RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM3, ENABLE)
 #define TIMER_1_ISR         TIM3_IRQHandler
